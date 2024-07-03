@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filters</title>
+</head>
+<body>
+  
+  <div id="container">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolore sed aspernatur voluptate possimus voluptas repudiandae omnis, facere pariatur totam!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolore sed aspernatur voluptate possimus voluptas repudiandae omnis, facere pariatur totam!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolore sed aspernatur voluptate possimus voluptas repudiandae omnis, facere pariatur totam!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolore sed aspernatur voluptate possimus voluptas repudiandae omnis, facere pariatur totam!
+    </p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $("#container p:even").css("background","grey");
+    });
+  </script>
+</body>
+</html>

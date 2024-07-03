@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserting Content</title>
+</head>
+<body>
+  <a href="#" id="append">Append</a>
+
+  <a href="#" id="prepend">Preppend</a>
+  
+  <div id="container">
+    <p>
+      1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+    <p>
+      2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+    <p>
+      3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+  <script>
+    $("document").ready(function(){
+      $("#append").click(function(){
+        $("p:first").append("I just appended some copy!");
+      });
+      $("#prepend").click(function(){
+        $("p:first").prepend("I just prepended some copy!");
+      });
+    });
+  </script>
+</body>
+</html>

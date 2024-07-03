@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Selectors</title>
+</head>
+<body>
+  <div id="container">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores error placeat quasi, vero quos animi eius. Ut totam quos ad?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores error placeat quasi, vero quos animi eius. Ut totam quos ad?</p>
+    <p>Jquery ipsum dolor sit, amet consectetur adipisicing elit. Asperiores error placeat quasi, vero quos animi eius. Ut totam quos ad?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores error placeat quasi, vero quos animi eius. Ut totam quos ad?</p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function(){
+      //$("p:first-child").css("border", "1px solid red")
+      //$("p:last-of-type").css("border", "1px solid red")
+      //$("p:contains('Jquery')").css("border", "1px solid red")
+      //$("p:parent").css("border", "1px solid red")
+      $("p:nth-child(3)").css("border", "1px solid red")
+    });
+  </script>
+
+ 
+</body>
+</html>

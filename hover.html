@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover</title>
+  <style>
+    .highlight{
+      background-color: grey;
+      text-shadow: 1px 1px #cccccc;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="textBox">
+    <p class="textCopy">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, optio.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quibusdam?
+    </p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $(".textCopy").hover(highlightCopy);
+
+      function highlightCopy(){
+        $(this).toggleClass("highlight");
+      }
+    });
+  </script>
+</body>
+</html>

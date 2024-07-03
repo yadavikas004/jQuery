@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifiying CSS</title>
+  <style>
+    .color{
+      color: #00D8FF;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" id="add-class">Add Class</a>
+
+  <a href="#" id="remove-class">Remove Class</a>
+
+  <a href="#" id="toggle-class">Toggle Class</a>
+
+  <a href="#" id="increase-class">Increase Class</a>
+
+  <div id="container">
+    <p>
+      1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusantium quisquam laborum perspiciatis blanditiis pariatur quam a officia, aut laboriosam.
+    </p>
+    <p>
+      2. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusantium quisquam laborum perspiciatis blanditiis pariatur quam a officia, aut laboriosam.
+    </p>
+    <p>
+      3. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusantium quisquam laborum perspiciatis blanditiis pariatur quam a officia, aut laboriosam.
+    </p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function(){
+      $("#add-class").click(function(){
+        $("p:first").addClass('color');
+      });
+      $("#remove-class").click(function(){
+        $("p:first").removeClass('color');
+      });
+      $("#toggle-class").click(function(){
+        $("p:first").toggleClass('color');
+      });
+      $("#increase-class").click(function(){
+        $("p:first").css("font-size","+=1px");
+      });
+    });
+  </script>
+</body>
+</html>

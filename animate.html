@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate</title>
+  <style>
+    #textBox{
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      position: absolute;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" id="grow">Grow</a> | <a href="#" id="move">Move</a> | <a href="#" id="bigger">Bigger</a> | <a href="#" id="many">Many Things</a>
+  <div id="textBox">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque maiores animi inventore natus quis? Excepturi repellendus ab nisi esse.
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $("#grow").click(function(){
+        $("#textBox").animate({width:"500px"},2000);
+      });
+      $("#move").click(function(){
+        $("#textBox").animate({marginLeft:"200px"},2000);
+      });
+      $("#bigger").click(function(){
+        $("#textBox").animate({fontSize:"40px"},3000);
+      });
+      $("#many").click(function(){
+        $("#textBox").animate({fontSize:"40px", marginLeft:"400px", width:"600px"},2000);
+      });
+    });
+  </script>
+</body>
+</html>

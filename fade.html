@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade</title>
+  <style>
+    #textBox{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" id="fade-in">Fade In</a> | <a href="#" id="fade-out">Fade Out</a>
+
+  <div id="textBox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis quisquam magni fuga accusantium blanditiis facere incidunt sit amet perspiciatis.</p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+
+    $("document").ready(function() {
+      $("#fade-in").on("click", function() {
+        $("#textBox").fadeIn(3000, function(){
+          alert("I'm Done");
+        })
+      })
+      $("#fade-out").on("click", function() {
+        $("#textBox").fadeOut("fast", function(){
+          alert("I'm Done Fading Out");
+        })
+      })
+    });
+  </script>
+
+</body>
+</html>

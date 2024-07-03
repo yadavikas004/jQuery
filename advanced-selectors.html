@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Selectors</title>
+</head>
+<body>
+  <div id="textBox">
+  </div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+    <p class="fourth-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+  </div>
+
+  <ul>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+  </ul>
+
+  <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>
+    <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus porro reprehenderit laborum minus! Quae labore nisi architecto necessitatibus odio!</p>    
+  </div>
+
+  <ul>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">home</a></li>    
+  </ul>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function(){
+      //$("div > p").css("border","2px solid blue");
+      //$("div > p.fourth-para").css("border","2px solid blue");
+      $("#box + ul").css("border","2px solid blue");
+    });
+  </script>
+</body>
+</html>

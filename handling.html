@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handling Events</title>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <style>
+    #textBox{
+      width: 150px;
+      height: 150px;
+      border: 1px solid black;     
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="textBox">
+    
+  </div>
+
+  <script>
+    $("document").ready(function() {
+      $("#textBox").on("click", whenMouseIsClicked);
+      $("#textBox").on("mouseleave", whenMouseLeaves);
+
+      function whenMouseIsClicked(){
+        $("#textBox").html("<h4>You Clicked Me!</h4>");
+      }
+
+      function whenMouseLeaves(){
+        $("#textBox").html("<h4>Where are you goin?</h4>");
+      }
+    });
+  </script>
+</body>
+</html>

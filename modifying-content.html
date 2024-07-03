@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifiying Content</title>
+  <style>
+    .colorBox{
+      color: #00D8FF;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>
+      1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+    <p>
+      2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+    <p>
+      3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus fuga quidem in illum ex fugit maxime pariatur eum et nihil.
+    </p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function(){
+      //$("#container p:first").wrap("<div class='colorBox'>");
+      //$("#container p:first").empty();
+      //$("<div>Container</div>").replaceAll("#container");
+      $("#container").replaceWith("<div>This has been replaced With</div>")
+    });
+  </script>
+</body>
+</html>

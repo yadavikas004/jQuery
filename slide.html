@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  
+  <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-down">Slide Down</a> | <a href="#" id="toggleSlide">Toggle</a>
+
+  <div id="textBox">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis velit quam laboriosam tempora eligendi, amet a quasi quaerat numquam temporibus.</p>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $("#slide-up").click(function() {
+        $("#textBox").slideUp("2000", "linear");
+      });
+      $("#slide-down").click(function() {
+        $("#textBox").slideDown("2000", "linear");
+      });
+      $("#toggleSlide").click(function() {
+        $("#textBox").slideToggle("2000", function() {
+          alert("I'm Done");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header New</title>
+  <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  
+  <div id="textBox">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum asperiores nobis hic dignissimos aperiam numquam. Quisquam dolores aliquam cupiditate! Hic assumenda suscipit omnis unde vitae nobis repudiandae iusto temporibus sunt.
+  </div>
+
+  <script>
+    $("document").ready(function (){
+      var newText = $("<p>");
+        newText.append("<h1>I Just replaced something</h1>");
+      $("#textBox").html(newText)
+    });
+  </script>
+</body>
+</html>
